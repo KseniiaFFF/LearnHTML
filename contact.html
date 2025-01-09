@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title><link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6e6295;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #6e6295;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #574f7b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #6e6295;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Зв'яжіться з нами</h2>
+        <form action="https://formspree.io/f/xpwwrkja" method="POST">
+            <input type="text" name="name" placeholder="Ваше ім'я" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+
+    <footer>
+        <p><a href="HomePage.html">Повернутися на головну</a></p>
+    </footer>
+</body>
+</html>

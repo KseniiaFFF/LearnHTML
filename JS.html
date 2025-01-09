@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Elements</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a79abb; 
+            color: #ffffff; 
+        }
+
+        .logo img {
+            width: 220px;
+            height: auto;
+        }
+
+        .header {
+            background-color: white; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 0 0 20px 20px;
+            padding: 0 10px;
+            height: 150px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #a79abb;
+            margin-right: 40px;
+        }
+
+        .header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        .header nav a {
+            text-decoration: none;
+            color: #6e6295; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px auto;
+      width: 100%;
+      padding: 50px;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .example {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .code {
+      width:35%;
+      height: auto;
+      box-sizing: border-box;
+      background-color: #303030;
+      border-right: 1px solid #ccc;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gif {
+      width: 35%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .demo-box {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .imgLogo {
+            display: flex;
+            justify-content: center; /* Центрує зображення */
+            align-items: center;
+            margin: 40px auto; /* Додає відступи зверху і знизу, центрує блок */
+            height: 75px;
+            width: auto;
+    }
+
+    button {
+            font-size: 24px;
+            padding: 15px 30px;
+            background-color: #6e6295;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+    pre {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+      height: 100%; 
+    }
+
+    footer {
+    background-color: #f3f3f3;
+    color: #6e6295;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-content nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content nav ul li a {
+    color: #6e6295;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="HomePage.html">
+                <img src="Image/Logo.png" alt="Learn HTML Logo">
+            </a>
+        </div>
+    <nav>
+            <a href="HTML.html" target="_blank">Елементи HTML</a>
+            <a href="CSS.html" target="_blank">Елементи CSS</a>
+            <a href="Search.html" target="_blank">Довідник</a>
+            <a href="Theory.html"_blank">Теорія</a>
+            <a href="Test.html" target="_blank">Тест з HTML</a>
+            <a href="Video.html" target="_blank">Відеоуроки</a>
+            <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>
+        </nav>
+    </div>
+
+    <div class="imgLogo">
+    <img src="Image/JS/JSLogo.png">
+    </div>
+
+    <div class="container">
+        <!-- Секция с кодом -->
+      <div class ="example">
+        <div class="code">
+          <pre><code>
+  &lt;div id="text" style="font-size: 24px;"&gt;Point it at me!&lt;/div&gt;
+                
+  &lt;script&gt;
+  const text = document.getElementById('text');
+  text.onmouseover = () => (text.style.color = 'red');
+  text.onmouseout = () => (text.style.color = 'black');
+  &lt;/script&gt;
+            </code></pre>
+        </div>
+        
+    
+        <!-- Секция с GIF -->
+        <div class="gif">
+          <div id="text" style="font-size: 24px;">Point it at me!</div>
+                
+  <script>
+  const text = document.getElementById('text');
+  text.onmouseover = () => (text.style.color = 'red');
+  text.onmouseout = () => (text.style.color = 'black');
+  </script>
+        </div>
+        </div>
+        <div class="example">
+        <div class="code">
+            <pre><code>
+  &lt;div id="message"&gt;Click the button to change this text.&lt;/div&gt;
+  &lt;button onclick="changeText()"&gt;Modify&lt;/button&gt;
+
+  &lt;style&gt;
+    #message {
+      color: black;
+    }
+  &lt;/style&gt;
+                
+  &lt;script&gt;
+  function changeText() {
+  document.getElementById('message').innerText = 
+  'The text has been successfully modified!';
+     }
+  &lt;/script&gt;
+              </code></pre>
+          </div>
+        
+      
+          <!-- Секция с GIF -->
+          <div class="gif">
+            <div id="message">Click the button to change this text.</div>
+<button onclick="changeText()">Modify</button>
+
+<style>
+  #message {
+    color: black;
+  }
+</style>
+
+<script>
+  function changeText() {
+    document.getElementById('message').innerText = 'The text has been successfully modified!';
+  }
+</script>
+          </div>
+          </div>
+          <div class="example">
+            <div class="code">
+                <pre><code>
+  &lt;div id="box" style="width: 50px; height: 50px; 
+  background-color: blue; position: absolute;"&gt;&lt;/div&gt;
+
+  &lt;script&gt;
+  let box = document.getElementById('box');
+  let position = 0;
+                    
+  function moveBox() {
+  position += 5;
+  box.style.left = position + 'px';
+                    
+     if (position < 200) {
+     requestAnimationFrame(moveBox);
+    }
+  }
+                    
+  box.onclick = moveBox;
+  &lt;/script&gt;
+                  </code></pre>
+              </div>
+            
+          
+              <!-- Секция с GIF -->
+          <div class="gif">
+            <div id="box" style="width: 50px; height: 50px; 
+  background-color: blue; position: absolute;"></div>
+
+  <script>
+  let box = document.getElementById('box');
+  let position = 0;
+                    
+  function moveBox() {
+  position += 5;
+  box.style.left = position + 'px';
+                    
+     if (position < 200) {
+     requestAnimationFrame(moveBox);
+    }
+  }
+                    
+  box.onclick = moveBox;
+  </script>
+          </div>
+</div>
+<div class="example">
+    <div class="code">
+        <pre><code>
+  &lt;button onclick="toggleMenu()"&gt;Меню&lt;/button&gt;
+  &lt;ul id="menu" style="display: none; list-style: none; 
+    padding: 0; color: black;"&gt;
+  &lt;li&gt;Element 1&lt;/li&gt;
+  &lt;li&gt;Element 2&lt;/li&gt;
+  &lt;li&gt;Element 3&lt;/li&gt;
+  &lt;/ul&gt;
+            
+  &lt;script&gt;
+  function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.style.display = menu.style.display === 'none' ? 
+  'block' : 'none';
+    }
+  &lt;/script&gt;
+          </code></pre>
+      </div>
+    
+  
+      <!-- Секция с GIF -->
+  <div class="gif">
+    <button onclick="toggleMenu()">Меню</button>
+
+  <ul id="menu" style="display: none; list-style: none; 
+    padding: 0; color: black;">
+
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+  </ul>
+            
+  <script>
+  function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.style.display = menu.style.display === 'none' ? 
+  'block' : 'none';
+    }
+  </script>
+  </div>
+</div>
+<div class="example">
+    <div class="code">
+        <pre><code>
+  &lt;form onsubmit="return validateForm()"&gt;
+  &lt;input id="email" type="text" placeholder="Enter email"/&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;p id="error" style="color: red;"&gt;&lt;/p&gt;
+              
+  &lt;script&gt;
+  function validateForm() {
+  const email = document.getElementById('email').value;
+  const error = document.getElementById('error');
+  if (!email.includes('@')) {
+  error.innerText = 'Enter a valid email address!’;
+  return false;
+  }
+  error.innerText = '';
+  return true;
+  }
+  &lt;/script&gt;
+          </code></pre>
+      </div>
+    
+  
+      <!-- Секция с GIF -->
+  <div class="gif">
+    <form onsubmit="return validateForm()">
+      <input id="email" type="text" placeholder="Enter email"/>
+      <button type="submit">Send</button>
+      </form>
+      <p id="error" style="color: red;"></p>
+                  
+      <script>
+      function validateForm() {
+      const email = document.getElementById('email').value;
+      const error = document.getElementById('error');
+      if (!email.includes('@')) {
+      error.innerText = 'Enter a valid email address!’;
+      return false;
+      }
+      error.innerText = '';
+      return true;
+      }
+      </script>
+  </div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div id="hover-box" style="width: 100px; height: 100px; 
+  background-color: coral; margin: 20px auto; transition: 
+  transform 0.3s;"&gt;&lt;/div&gt;
+
+  &lt;script&gt;
+  const hoverBox = document.getElementById('hover-box');
+        
+  hoverBox.onmouseover = () => {
+  hoverBox.style.transform = 'scale(1.2)';
+    };
+        
+  hoverBox.onmouseout = () => {
+  hoverBox.style.transform = 'scale(1)';
+    };
+  &lt;/script&gt;
+        </code></pre>
+    </div>
+  
+
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div id="hover-box" style="width: 100px; height: 100px; 
+  background-color: coral; margin: 20px auto; transition: 
+  transform 0.3s;"></div>
+
+  <script>
+  const hoverBox = document.getElementById('hover-box');
+        
+  hoverBox.onmouseover = () => {
+  hoverBox.style.transform = 'scale(1.2)';
+    };
+        
+  hoverBox.onmouseout = () => {
+  hoverBox.style.transform = 'scale(1)';
+    };
+  </script>
+</div>
+</div>
+
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;button id="change-bg" style="display: block; margin: 
+  20px auto; padding: 10px 20px;"&gt;Change Background
+  &lt;/button&gt;
+
+  &lt;script&gt;
+  const button = document.getElementById('change-bg');
+
+  button.onclick = () => {
+    const randomColor = '#' + Math.floor(Math.random() * 
+    16777215). toString(16);
+    document.body.style.backgroundColor = randomColor;
+  };
+  &lt;/script&gt;
+        </code></pre>
+    </div>
+  
+
+    <!-- Секция с GIF -->
+<div class="gif">
+  <button id="change-bg" style="display: block; margin: 
+  20px auto; padding: 10px 20px;">Change Background
+  </button>
+
+  <script>
+  const button = document.getElementById('change-bg');
+
+  button.onclick = () => {
+    const randomColor = '#' + Math.floor(Math.random() * 
+    16777215). toString(16);
+    document.body.style.backgroundColor = randomColor;
+  };
+  </script>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div class="accordion"&gt;
+  &lt;h3 class="title"&gt;Section 1&lt;/h3&gt;
+  &lt;div class="content" style="display: none;"&gt;
+  This is the content of Section 1.&lt;/div&gt;
+        
+  &lt;h3 class="title"&gt;Section 2&lt;/h3&gt;
+  &lt;div class="content" style="display: none;"&gt;
+  This is the content of Section 2.&lt;/div&gt;
+  &lt;/div&gt;
+        
+
+  &lt;script&gt;
+  const titles = document.querySelectorAll('.title');
+
+  titles.forEach(title => {
+    title.onclick = () => {
+      const content = title.nextElementSibling;
+      content.style.display = content.style.display === 
+      'block' ? 'none' : 'block';
+    };
+  });
+  &lt;/script&gt;
+        </code></pre>
+    </div>
+  
+
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div class="accordion">
+    <h3 class="title" style="color: #303030;">Section 1</h3>
+    <div class="content" style="display: none; color: #303030;">This is the content of Section 1.</div>
+  
+    <h3 class="title" style="color: #303030;">Section 2</h3>
+    <div class="content" style="display: none; color: #303030;">This is the content of Section 2.</div>
+  </div>
+  
+  <script>
+    const titles = document.querySelectorAll('.title');
+  
+    titles.forEach(title => {
+      title.onclick = () => {
+        const content = title.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      };
+    });
+  </script>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div id="scatter-text" style="font-size: 24px; 
+  cursor: pointer;"&gt;Hover over me!&lt;/div&gt;
+        
+
+  &lt;script&gt;
+  const scatterText = document.getElementById('scatter-text');
+
+  scatterText.onmouseover = () => {
+    scatterText.style.position = 'relative';
+    scatterText.innerHTML = scatterText.textContent
+      .split('')
+      .map(letter => `<span style="display: inline-block; transform: translate(${Math.random() * 50}px, ${Math.random() * 50}px); transition: 0.5s;">${letter}</span>`)
+      .join('');
+  };
+
+  scatterText.onmouseout = () => {
+    scatterText.innerHTML = 'Hover over me!';
+  };
+  &lt;/script&gt;
+        </code></pre>
+    </div>
+  
+
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div id="scatter-text" style="font-size: 24px; 
+  cursor: pointer; color: #303030;">Hover over me!</div>
+        
+
+  <script>
+  const scatterText = document.getElementById('scatter-text');
+
+scatterText.onmouseover = () => {
+  scatterText.style.position = 'relative';
+  scatterText.innerHTML = scatterText.textContent
+    .split('')
+    .map(letter => `<span style="display: inline-block; transform: translate(${Math.random() * 50}px, ${Math.random() * 50}px); transition: 0.5s;">${letter}</span>`)
+    .join('');
+};
+
+scatterText.onmouseout = () => {
+  scatterText.innerHTML = 'Hover over me!';
+};
+  </script>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div id="counter" style="font-size: 32px; 
+  text-align: center;"&gt;0&lt;/div&gt;
+        
+
+  &lt;script&gt;
+  const counter = document.getElementById('counter');
+  let count = 0;
+  const target = 10000;
+
+  function updateCounter() {
+    if (count < target) {
+      count++;
+      counter.innerText = count;
+      setTimeout(updateCounter, 20);
+    }
+  }
+
+  updateCounter();
+  &lt;/script&gt;
+        </code></pre>
+    </div>
+  
+
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div id="counter" style="font-size: 32px; 
+  text-align: center; color: #303030;">0</div>
+        
+
+  <script>
+  const counter = document.getElementById('counter');
+  let count = 0;
+  const target = 10000;
+
+  function updateCounter() {
+    if (count < target) {
+      count++;
+      counter.innerText = count;
+      setTimeout(updateCounter, 20);
+    }
+  }
+
+  updateCounter();
+  </script>
+</div>
+</div>
+</div>
+<button id="scroll-top" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 20px;">UP!</button>
+
+<script>
+  const scrollTopButton = document.getElementById('scroll-top');
+
+  window.onscroll = () => {
+    scrollTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+  };
+
+  scrollTopButton.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2024 LEARN HTML. Усі права захищені.</p>
+      <nav>
+          <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="contact.html"  target="_blank">Написати нам</a></li>
+              <li><a href="#">Політика конфіденційності</a></li>
+              <li><a href="#">FAQ</a></li>
+          </ul>
+      </nav>
+  </div>
+</footer>
+</body>
+</html>

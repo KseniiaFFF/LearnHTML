@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Elements</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a79abb; 
+            color: #ffffff; 
+        }
+
+        .logo img {
+            width: 220px;
+            height: auto;
+        }
+
+        .header {
+            background-color: white; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 0 0 20px 20px;
+            padding: 0 10px;
+            height: 150px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #a79abb;
+            margin-right: 40px;
+        }
+
+        .header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        .header nav a {
+            text-decoration: none;
+            color: #6e6295; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            background-color: #6e6295;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px auto;
+      width: 100%;
+      padding: 50px;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .example {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .code {
+      width:35%;
+      height: auto;
+      box-sizing: border-box;
+      background-color: #303030;
+      border-right: 1px solid #ccc;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gif {
+      width: 35%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .demo-box {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .imgLogo {
+            display: flex;
+            justify-content: center; /* Центрує зображення */
+            align-items: center;
+            margin: 40px auto; /* Додає відступи зверху і знизу, центрує блок */
+            height: 75px;
+            width: auto;
+
+    }
+
+    pre {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+      height: 100%; 
+    }
+
+    /* Стили для футера */
+footer {
+    background-color: #f3f3f3;
+    color: #6e6295;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-content nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content nav ul li a {
+    color: #6e6295;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="HomePage.html">
+                <img src="Image/Logo.png" alt="Learn HTML Logo">
+            </a>
+        </div>
+    <nav>
+            <a href="HTML.html" target="_blank">Елементи HTML</a>
+            <a href="JS.html" target="_blank">Елементи JS</a>
+            <a href="Search.html" target="_blank">Довідник</a>
+            <a href="Theory.html" target="_blank">Теорія</a>
+            <a href="Test.html" target="_blank">Тест з HTML</a>
+            <a href="Video.html" target="_blank">Відеоуроки</a>
+            <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>
+        </nav>
+    </div>
+
+    <div class="imgLogo">
+    <img src="Image/CSS/CSSLogo.png">
+    </div>
+
+    <div class="container">
+        <!-- Секция с кодом -->
+      <div class ="example">
+        <div class="code">
+          <pre><code>
+  &lt;div class="hover-box"&gt;&lt;/div&gt;
+
+  &lt;style&gt;
+  .hover-box {
+  width: 150px;
+  height: 150px;
+  background-color: #6e6295;
+  margin: 50px auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+    }
+            
+  .hover-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+  &lt;/style&gt;
+            </code></pre>
+        </div>
+        
+    
+        <!-- Секция с GIF -->
+        <div class="gif">
+          <div class="hover-box"></div>
+
+<style>
+  .hover-box {
+    width: 150px;
+    height: 150px;
+    background-color: #6e6295;
+    margin: 50px auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .hover-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+        </div>
+        </div>
+        <div class="example">
+        <div class="code">
+            <pre><code>
+ &lt;button class="pulse-btn"&gt;Click Me&lt;/button&gt;
+
+  &lt;style&gt;
+  .pulse-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #a79abb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+    }
+              
+  @keyframes pulse {
+  0% {
+  transform: scale(1);
+  box-shadow: 0 0 0 0 rgba(167, 154, 187, 0.7);
+    }
+  50% {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 10px rgba(167, 154, 187, 0);
+    }
+  100% {
+  transform: scale(1);
+  box-shadow: 0 0 0 0 rgba(167, 154, 187, 0);
+      }
+    }
+  &lt;/style&gt;
+              </code></pre>
+          </div>
+        
+      
+          <!-- Секция с GIF -->
+          <div class="gif">
+            <button class="pulse-btn">Click Me</button>
+
+<style>
+  .pulse-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #a79abb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(167, 154, 187, 0.7);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(167, 154, 187, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(167, 154, 187, 0);
+    }
+  }
+</style>
+          </div>
+          </div>
+          <div class="example">
+            <div class="code">
+                <pre><code>
+  &lt;div class="typewriter"&gt;
+  &lt;p&gt;Hello, World! Welcome to CSS effects!&lt;/p&gt;
+  &lt;/div&gt;
+                  
+  &lt;style&gt;
+  .typewriter p {
+  font-size: 18px;
+  font-family: monospace;
+  color: #000000;
+  overflow: hidden;
+  border-right: 3px solid #ffffff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  animation: typing 3s steps(30, end), blink 0.8s infinite;
+    }
+                  
+  @keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+    }
+                  
+  @keyframes blink {
+  50% { border-color: transparent; }
+    }
+  &lt;/style&gt;
+                  </code></pre>
+              </div>
+            
+          
+              <!-- Секция с GIF -->
+          <div class="gif">
+            <div class="typewriter">
+              <p>Hello, World! Welcome to CSS effects!</p>
+            </div>
+            
+            <style>
+              .typewriter p {
+                font-size: 18px;
+                font-family: monospace;
+                color: #000000;
+                overflow: hidden;
+                border-right: 3px solid #ffffff;
+                white-space: nowrap;
+                margin: 0 auto;
+                letter-spacing: 2px;
+                animation: typing 3s steps(30, end), blink 0.8s infinite;
+              }
+            
+              @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+              }
+            
+              @keyframes blink {
+                50% { border-color: transparent; }
+              }
+            </style>
+          </div>
+</div>
+<div class="example">
+    <div class="code">
+        <pre><code>
+  &lt;div class="gradient-bg"&gt;&lt;/div&gt;
+
+  &lt;style&gt;
+  .gradient-bg {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(270deg, #a79abb, #3e0ae8);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s infinite alternate;
+    }
+          
+  @keyframes gradientAnimation {
+  0% {
+  background-position: 0% 50%;
+    }
+  100% {
+  background-position: 100% 50%;
+      }
+    }
+  &lt;/style&gt;
+          </code></pre>
+      </div>
+    
+  
+      <!-- Секция с GIF -->
+  <div class="gif">
+    <div class="gradient-bg"></div>
+
+<style>
+  .gradient-bg {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(270deg, #a79abb, #3e0ae8);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s infinite alternate;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+</style>
+  </div>
+</div>
+<div class="example">
+    <div class="code">
+        <pre><code>
+  &lt;div class="card"&gt;
+  &lt;div class="card-inner"&gt;
+  &lt;div class="card-front"&gt;Front&lt;/div&gt;
+  &lt;div class="card-back"&gt;Back&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+          
+  &lt;style&gt;
+  .card {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  perspective: 1000px;
+    }
+          
+  .card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+    }
+          
+  .card:hover .card-inner {
+  transform: rotateY(180deg);
+    }
+          
+  .card-front,
+  .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #6e6295;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+    }
+          
+  .card-back {
+  background-color: #a79abb;
+  transform: rotateY(180deg);
+    }
+  &lt;/style&gt;
+          </code></pre>
+      </div>
+    
+  
+      <!-- Секция с GIF -->
+  <div class="gif">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">Front</div>
+        <div class="card-back">Back</div>
+      </div>
+    </div>
+    
+    <style>
+      .card {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        perspective: 1000px;
+      }
+    
+      .card-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+      }
+    
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+    
+      .card-front,
+      .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #a79abb;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        backface-visibility: hidden;
+      }
+    
+      .card-back {
+        background-image: url(Image/CSS/bin.png);
+        transform: rotateY(180deg);
+      }
+    </style>
+  </div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;h1 class="neon-text"&gt;Neon Effect&lt;/h1&gt;
+
+  &lt;style&gt;
+  .neon-text {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #a79abb, 0 0 10px #6e6295, 
+  0 0 20px #a79abb;
+    }
+  &lt;/style&gt;
+        </code></pre>
+    </div>
+  
+    <!-- Секция с GIF -->
+<div class="gif">
+  <h1 class="neon-text">Neon Effect</h1>
+
+<style>
+  .neon-text {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #a79abb, 0 0 10px #6e6295, 0 0 20px #a79abb;
+  }
+</style>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div class="snowflake"&gt;❄&lt;/div&gt;
+  &lt;div class="snowflake"&gt;❄&lt;/div&gt;
+  &lt;div class="snowflake"&gt;❄&lt;/div&gt;
+        
+  &lt;style&gt;
+  @keyframes snowfall {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(100vh); }
+    }
+        
+  .snowflake {
+  position: absolute;
+  top: -10px;
+  color: ##7289df;
+  font-size: 24px;
+  animation: snowfall 5s linear infinite;
+  left: calc(20% + 60% * random());
+    }
+        
+  .snowflake:nth-child(1) {
+  animation-delay: 0s;
+  left: 10%;
+    }
+  .snowflake:nth-child(2) {
+  animation-delay: 1s;
+  left: 40%;
+    }
+  .snowflake:nth-child(3) {
+  animation-delay: 2s;
+  left: 70%;
+    }
+  &lt;/style&gt;
+        </code></pre>
+    </div>
+  
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div class="snowflake">❄</div>
+<div class="snowflake">❄</div>
+<div class="snowflake">❄</div>
+
+<style>
+  @keyframes snowfall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+  }
+
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    color: #7289df;
+    font-size: 24px;
+    animation: snowfall 5s linear infinite;
+    left: calc(20% + 60% * random());
+  }
+
+  .snowflake:nth-child(1) {
+    animation-delay: 0s;
+    left: 10%;
+  }
+  .snowflake:nth-child(2) {
+    animation-delay: 1s;
+    left: 40%;
+  }
+  .snowflake:nth-child(3) {
+    animation-delay: 2s;
+    left: 70%;
+  }
+</style>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div class="wave"&gt;&lt;/div&gt;
+
+  &lt;style&gt;
+  .wave {
+  width: 100%;
+  height: 200px;
+  background-image: url(Image/CSS/background.png);
+  animation: waveMove 5s linear infinite;
+    }
+        
+  @keyframes waveMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+    }
+  &lt;/style&gt;
+        </code></pre>
+    </div>
+  
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div class="wave"></div>
+
+<style>
+  .wave {
+    width: 100%;
+    height: 200px;
+    background-image: url(Image/CSS/background.png);
+    animation: waveMove 5s linear infinite;
+  }
+
+  @keyframes waveMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+  }
+</style>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;button class="shake-btn"&gt;Hover Me&lt;/button&gt;
+
+  &lt;style&gt;
+  .shake-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #6e6295;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    }
+        
+  .shake-btn:hover {
+  animation: shake 0.4s ease-in-out;
+    }
+        
+  @keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+    }
+  &lt;/style&gt;
+        </code></pre>
+    </div>
+  
+    <!-- Секция с GIF -->
+<div class="gif">
+  <button class="shake-btn">Hover Me</button>
+
+<style>
+  .shake-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6e6295;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .shake-btn:hover {
+    animation: shake 0.4s ease-in-out;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+  }
+</style>
+</div>
+</div>
+<div class="example">
+  <div class="code">
+      <pre><code>
+  &lt;div class="loader"&gt;&lt;/div&gt;
+
+  &lt;style&gt;
+  .loader {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #6e6295; 
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin: 50px auto;
+    }
+        
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+    }
+  &lt;/style&gt;
+        </code></pre>
+    </div>
+  
+    <!-- Секция с GIF -->
+<div class="gif">
+  <div class="loader"></div>
+
+<style>
+  .loader {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #6e6295; 
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    margin: 50px auto;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+</div>
+</div>
+</div>
+<button id="scroll-top" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 20px;">UP!</button>
+
+<script>
+  const scrollTopButton = document.getElementById('scroll-top');
+
+  window.onscroll = () => {
+    scrollTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+  };
+
+  scrollTopButton.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2024 LEARN HTML. Усі права захищені.</p>
+      <nav>
+          <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="contact.html"  target="_blank">Написати нам</a></li>
+              <li><a href="#">Політика конфіденційності</a></li>
+              <li><a href="#">FAQ</a></li>
+          </ul>
+      </nav>
+  </div>
+</footer>
+</body>
+</html>

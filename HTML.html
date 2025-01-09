@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a79abb;
+            color: #ffffff;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 0 0 20px 20px;
+            padding: 0 10px;
+            height: 150px;
+        }
+
+        .logo img {
+            width: 220px;
+            height: auto;
+        }
+
+        .header nav {
+            display: flex;
+            gap: 30px;
+            margin-left: 40px;
+        }
+
+        .header nav a {
+            text-decoration: none;
+            color: #6e6295;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .example {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .code {
+            flex: 1;
+            background-color: #303030;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: auto;
+            min-height: 200px;
+            text-align: left;
+            font-size: 14px;
+            box-sizing: border-box;
+            width: 450px;
+        }
+
+        .iframe {
+            flex: 1;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            width: 450px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        iframe[srcdoc] {
+            font-size: 28px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            background-color: #6e6295;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+        button:hover {
+            background-color: #5a4d83;
+        }
+
+        .imgLogo img {
+            height: 75px;
+            margin: 30px auto;
+            display: block;
+        }
+
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        footer {
+    background-color: #f3f3f3;
+    color: #6e6295;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-content nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content nav ul li a {
+    color: #6e6295;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="HomePage.html">
+                <img src="HTML/images/Logo.png" alt="Learn HTML Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="HTML.html" target="_blank">Елементи HTML</a>
+            <a href="CSS.html" target="_blank">Елементи CSS</a>
+            <a href="Search.html" target="_blank">Довідник</a>
+            <a href="Theory.html" target="_blank">Теорія</a>
+            <a href="Test.html" target="_blank">Тест з HTML</a>
+            <a href="Video.html" target="_blank">Відеоуроки</a>
+            <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>
+        </nav>
+    </div>
+
+    <div class="imgLogo">
+        <img src="HTML/images/HTMLLogo.png" alt="HTML Logo">
+    </div>
+
+    <div class="container">
+        <!-- Приклад 1 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;English&lt;/li&gt;
+    &lt;li&gt;German&lt;/li&gt;
+    &lt;li&gt;Spanish&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc=" 
+                <style>
+                    body { 
+                        font-size: 28px; 
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    ul {
+                        list-style-position: inside;
+                        padding: 0;
+                        margin: 0;
+                    }
+                </style>
+                <ul>
+                    <li>English</li>
+                    <li>German</li>
+                    <li>Spanish</li>
+                </ul>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 2 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;English&lt;/li&gt;
+    &lt;li&gt;German&lt;/li&gt;
+    &lt;li&gt;Spanish&lt;/li&gt;
+&lt;/ol&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc=" 
+                <style>
+                    body { 
+                        font-size: 28px; 
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    ol {
+                        list-style-position: inside;
+                        padding: 0;
+                        margin: 0;
+                    }
+                </style>
+                <ol>
+                    <li>English</li>
+                    <li>German</li>
+                    <li>Spanish</li>
+                </ol>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 3 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;a href=&quot;//itstep.org/uk&quot;&gt;
+    &lt;button&gt;IT Step&lt;/button&gt;
+&lt;/a&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc=" 
+                <style>
+                    body { 
+                        font-size: 28px; 
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    button {
+                        padding: 10px 20px;
+                        font-size: 28px;
+                    }
+                </style>
+                <a href='//itstep.org/uk'>
+                    <button>IT Step</button>
+                </a>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 4 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;h1&gt;Hello HTML&lt;/h1&gt;
+&lt;h2&gt;Hello HTML&lt;/h2&gt;
+&lt;h3&gt;Hello HTML&lt;/h3&gt;
+&lt;h4&gt;Hello HTML&lt;/h4&gt;
+&lt;h5&gt;Hello HTML&lt;/h5&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc=" 
+                <style>
+                    body { 
+                        font-size: 18px; 
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    h1, h2, h3, h4, h5 {
+                        margin: 5px 0;
+                    }
+                </style>
+                <div>
+                    <h1>Hello HTML</h1>
+                    <h2>Hello HTML</h2>
+                    <h3>Hello HTML</h3>
+                    <h4>Hello HTML</h4>
+                    <h5>Hello HTML</h5>
+                </div>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 5 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;form action=&quot;/submit&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Ім'я:&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+&lt;button type=&quot;submit&quot;&gt;Надіслати&lt;/button&gt;
+&lt;/form&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc="
+                <style>
+                    body { 
+                        font-size: 18px; 
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: center;
+                    }
+                    button {
+                        padding: 5px 15px;
+                    }
+                </style>
+                <form action='/submit'>
+                    <label for='name'>Ім'я:</label>
+                    <input type='text' id='name' name='name'>
+                    <button type='submit'>Надіслати</button>
+                </form>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 6 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;table border="1"&gt;
+&lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Jane&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc=" 
+                <style>
+                    body { 
+                        font-size: 18px; 
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    table {
+                        border-collapse: collapse;
+                        margin: auto;
+                    }
+                    th, td {
+                        padding: 10px;
+                        border: 1px solid black;
+                    }
+                </style>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>25</td>
+                    </tr>
+                </table>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 7 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;figure&gt;
+&lt;img src=&quot;images/example.jpg&quot; 
+     alt=&quot;Example&quot; 
+     width=&quot;300&quot;&gt;
+&lt;figcaption&gt;An example image&lt;/figcaption&gt;
+&lt;/figure&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc="
+                <style>
+                    body { 
+                        font-size: 18px; 
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    figure {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    figcaption {
+                        font-style: italic;
+                    }
+                </style>
+                <figure>
+                    <img src='HTML/images/hq720.jpg' alt='Example' width='300'>
+                    <figcaption>An example image</figcaption>
+                </figure>">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Приклад 8 -->
+        <div class="example">
+            <div class="code">
+                <pre><code>
+&lt;article class=&quot;post&quot;&gt;
+
+    &lt;h2&gt;Мій блог&lt;/h2&gt;
+    &lt;section class=&quot;content&quot;&gt;
+    &lt;h3&gt;Про HTML&lt;/h3&gt;
+    &lt;p&gt;HTML - мова розмітки&lt;/p&gt
+
+&lt;/section&gt;
+
+&lt;section class=&quot;comments&quot;&gt;
+
+    &lt;h3&gt;Коментарі&lt;/h3&gt;
+    &lt;p&gt;Дуже корисна стаття!&lt;/p&gt;
+
+&lt;/section&gt;
+&lt;/article&gt;
+                </code></pre>
+            </div>
+            <div class="iframe">
+                <iframe srcdoc=" 
+                <style>
+                    body { 
+                        font-size: 16px; 
+                        text-align: left;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                    }
+                    article {
+                        width: 250px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 6px;
+                    }
+                    h2 {
+                        color: #333;
+                        margin: 0 0 8px 0;
+                        font-size: 18px;
+                        border-bottom: 1px solid #6e6295;
+                        padding-bottom: 5px;
+                    }
+                    section {
+                        margin: 8px 0;
+                        padding: 8px;
+                        background: #f5f5f5;
+                        border-radius: 4px;
+                    }
+                    h3 {
+                        color: #6e6295;
+                        margin: 0 0 5px 0;
+                        font-size: 16px;
+                    }
+                    p {
+                        margin: 5px 0;
+                        font-size: 14px;
+                    }
+                </style>
+                <article class='post'>
+                    <h2>Мій блог</h2>
+                    <section class='content'>
+                        <h3>Про HTML</h3>
+                        <p>HTML - мова розмітки</p>
+                    </section>
+                    <section class='comments'>
+                        <h3>Коментарі</h3>
+                        <p>Дуже корисна стаття!</p>
+                    </section>
+                </article>">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 LEARN HTML. Усі права захищені.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="contact.html"  target="_blank">Написати нам</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <button id="scroll-top" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 20px;">UP!</button>
+
+    <script>
+        const scrollTopButton = document.getElementById('scroll-top');
+      
+        window.onscroll = () => {
+          scrollTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+        };
+      
+        scrollTopButton.onclick = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+      </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+ 
+
+

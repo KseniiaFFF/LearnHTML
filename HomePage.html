@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    min-height: 100vh; /* Минимальная высота страницы — 100% экрана */
+    margin: 0;
+    background-image: url(Image/HomePageBack.png);
+    background-size: cover;
+    background-position: center;
+    color: #6e6295;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 220px;
+    height: auto;
+}
+
+main {
+    flex: 1; /* Основной контент занимает доступное пространство */
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    transform: translateX(-200px);        
+}
+
+.navigation a {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #6e6295;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+.navigation img {
+    width: 70px;
+    margin-right: 10px; 
+}
+
+/* Стили для футера */
+footer {
+    background-color: #f3f3f3;
+    color: #6e6295;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-content nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content nav ul li a {
+    color: #6e6295;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="HomePage.html"><img src="Image/Logo.png" alt="Logo"></a>
+    </div>
+
+    <main>
+        <div class="navigation">
+            <a href="https://jsfiddle.net/" target="_blank"><img src="Image/1.png" alt="JSFiddle">JSFiddle</a>
+            <a href="Video.html" target="_blank"><img src="Image/2.png" alt="Відеоуроки">Відеоуроки</a>
+            <a href="JS.html" target="_blank"><img src="Image/3.png" alt="Елементи JS">Елементи JS</a>
+            <a href="CSS.html" target="_blank"><img src="Image/4.png" alt="Елементи CSS">Елементи CSS</a>
+            <a href="Test.html" target="_blank"><img src="Image/5.png" alt="Тест з HTML">Тест з HTML</a>
+            <a href="Theory.html" target="_blank"><img src="Image/6.png" alt="Теорія">Теорія</a>
+            <a href="Search.html" target="_blank"><img src="Image/7.png" alt="Довідник">Довідник</a>
+            <a href="HTML.html" target="_blank"><img src="Image/8.png" alt="Елементи HTML">Елементи HTML</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 LEARN HTML. Усі права захищені.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="contact.html"  target="_blank">Написати нам</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

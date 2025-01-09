@@ -1,0 +1,185 @@
+span {
+    font-style: italic;
+}
+/* Хедер */
+.logo img {
+    width: 220px;
+    height: auto;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0 0 20px 20px;
+    padding: 0 10px;
+    height: 150px;
+    
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a79abb;
+    margin-right: 40px;
+}
+
+.header nav {
+    display: flex;
+    gap: 50px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #6e6295;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #6e6295;
+    color: #fff;
+}
+
+.pagination a.active {
+    background-color: #6e6295;
+    color: #fff;
+    border-color: #6e6295;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a79abb;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px auto;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+}
+
+.example {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.code {
+    width: 35%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #303030;
+    border-right: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gif {
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.demo-box {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+}
+
+.imgLogo {
+    display: flex;
+    justify-content: center; /* Центрує зображення */
+    align-items: center;
+    margin: 40px auto; /* Додає відступи зверху і знизу, центрує блок */
+    height: 75px;
+    width: auto;
+
+}
+
+button {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #6e6295;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 100%;
+}
+
+.search_block form {
+    width: 250px;
+    height: 50px;
+    display:flex;
+    margin: 0 auto;
+  }
+  input.search {
+    width: calc(100% - 54px);
+    height: auto;
+    background-color: #fcfdfd;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 0;
+    padding-left: 15px;
+  }
+  input.submit {
+    background: url("https://img.icons8.com/ffffff/search") center center/50% auto
+      no-repeat #bf95ed;
+    border: 0;
+    width: 54px;
+    height: auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+   
+  }
+

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a79abb; 
+            color: #303030; 
+            overflow-x: hidden;
+        }
+
+        .logo img {
+            width: 220px;
+            height: auto;
+        }
+
+        .header {
+            background-color: white; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 0 0 20px 20px;
+            padding: 0 10px;
+            height: 150px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #a79abb;
+            margin-right: 40px;
+        }
+
+        .header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        .header nav a {
+            text-decoration: none;
+            color: #6e6295; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .imgVideoLessons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            max-width: 40%;
+        }
+
+        .imgVideoLessons img {
+            max-width: 60%; /* Обмеження ширини зображення */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Мінімальна ширина відеоблока */
+            gap: 10px; /* Зменшення проміжків */
+            width: 98%;
+            max-width: 100%;
+            padding: 1%;
+            margin-bottom: 5%;
+        }
+
+        .video-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .video-block:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        .play-button {
+            width: 100px;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            background-color: red;
+            margin: auto;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        .play-button::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 0 20px 30px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .video-description {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0 0 0;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Позиціювання над кнопкою */
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        footer {
+    background-color: #f3f3f3;
+    color: #6e6295;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-content nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content nav ul li a {
+    color: #6e6295;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+  <div class="header">
+        <div class="logo">
+            <a href="HomePage.html">
+                <img src="Image/Logo.png" alt="Learn HTML Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="HTML.html" target="_blank">Елементи HTML</a>
+            <a href="CSS.html" target="_blank">Елементи CSS</a>
+            <a href="JS.html" target="_blank">Елементи JS</a>
+            <a href="Search.html" target="_blank">Довідник</a>
+            <a href="Theory.html" target="_blank">Теорія</a>
+            <a href="Test.html" target="_blank">Тест з HTML</a>
+            <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>
+        </nav>
+    </div>
+
+    <div class="imgVideoLessons">
+        <img src="Image\VideoLogo.png" alt="Video Logo ">
+    </div>
+   
+    <div class="video-container">
+        <!-- Відео-блоки -->
+         <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=pBcmZNulpEQ" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Вступ до HTML: основи розмітки</p>
+            <span class="tooltiptext">Відео про основи HTML</span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=GrG8I-lQryw&t=22s" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">CSS: Створення стилів для веб-сайтів</p>
+            <span class="tooltiptext">Детальніше про CSS</span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=L04l_Gql1Xw" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Основні теги html: перші кроки</p>
+            <span class="tooltiptext">Основи для створення html сторінки</span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=086Qp1UGJfQ" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Розробка інтерактивного контенту</p>
+            <span class="tooltiptext">Про головні шаблони для верстальника-початківця </span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=Qdy22sSi2Uo&list=PLRaNZ2dI6aXOrllyXSEDCjjy0OnF-FtTc&index=2" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Селектори CSS</p>
+            <span class="tooltiptext">Ознайомлення з базовими і основними селекторами css</span>
+        </div>
+       
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=DEMMI7pdPnU&list=PLRaNZ2dI6aXOrllyXSEDCjjy0OnF-FtTc&index=5" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Фонові зображення в css, властивість background css</p>
+            <span class="tooltiptext">Відео як задавати колір, встановлювати зображення на фон, додавати кілька зображень на фон та інше</span>
+        </div>
+    
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=NMOWI6vYVBM&t=17s" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Як створити простий сайт &#40;сторінку&#41; </p>
+            <span class="tooltiptext">Практичний відео-урок кодування простої сторінки</span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=LiBt9V4A_cU&list=PLWuPdIzAqBUjZFA7MrtMcfGSSCGL9gh9R" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Статичний сайт для початківця</p>
+            <span class="tooltiptext">Верстання багатосторінкового статичного сайту</span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=l5LmRHXlM5k&list=PLWuPdIzAqBUgeKncwZErpJ4WMJ18iufsA&index=2" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">Створення простого блогу</p>
+            <span class="tooltiptext">Практичний відео-урок кодування </span>
+        </div>
+
+        <div class="video-block tooltip">
+            <a href="https://www.youtube.com/watch?v=W4MIiV4nZDY" target="_blank">
+                <div class="play-button"></div>
+            </a>
+            <p class="video-description">HTML для початківців</p>
+            <span class="tooltiptext">Повний курс для початківців за 3 години </span>
+        </div>
+
+    </div>
+    
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 LEARN HTML. Усі права захищені.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="contact.html"  target="_blank">Написати нам</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+      </footer>
+</body>
+</html>

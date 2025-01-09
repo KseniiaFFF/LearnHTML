@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io /apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io /favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io /favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="HomePage.html">
+                <img src="Image/Logo.png" alt="Learn HTML Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="HTML.html" target="_blank">Елементи HTML</a>
+            <a href="CSS.html" target="_blank">Елементи CSS</a>
+            <a href="Search.html" target="_blank">Довідник</a>
+            <a href="Theory.html" target="_blank">Теорія</a>
+            <a href="Test.html" target="_blank">Тест з HTML</a>
+            <a href="Video.html" target="_blank">Відеоуроки</a>
+            <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>
+        </nav>
+    </div>
+
+    <div class="imgLogo">
+        <img src="Image/SearchLogo.png">
+    </div>
+
+
+    <div class="search_block">
+        <form>
+            <input type="text" name="text" class="search" placeholder="Пошук">
+            <input type="submit" name="submit" class="submit" value="">
+        </form>
+    </div>
+
+    <div class="container">
+    <!-- Довідник НТML -->
+    <h1>Довідник по HTML тегам</h1>
+    <p>HTML - це мова розмітки за допомогою тегів. Тобто, HTML документ буде складатися з деякої групи елементів, де
+        кожен елемент буде визначатися (починатися та закінчуватися) <br> певним тегом (Для деяких елементів кінцевий тег не
+        є обов'язвовим)</p>
+    <p>Тобто, тег — це назва елементу, записана у кутових дужках (&lt; &gt;)</p>
+    <p>Кожен HTML тег має свою унікальну назву з визначеним синтаксисом, яка записується латинськими літерами і не
+        чутлива до регістру.</p>
+    <p>HTML документ оброблюється браузером та відтворюється на екрані у звичному для людини вигляді.</p>
+    <h2>HTML теги відсортовано в алфавітному порядку</h2>
+    </div>
+
+    <div class="example">
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Теґ</th>
+            <th>Опис</th>
+        </tr>
+        <tr>
+            <td>&lt;!--...--&gt;</td>
+            <td>Визначає коментар в документі</td>
+        </tr>
+        <tr>
+            <td>&lt;a&gt;
+            </td>
+            <td> Створює посилання</td>
+        </tr>
+        <tr>
+            <td>&lt;abbr&gt;
+            </td>
+            <td> Визначає абревіатуру чи акронім</td>
+        </tr>
+        <tr>
+            <td> &lt;address&gt;</td>
+            <td>Визначає контактну інформацію автора/власника документа або статті</td>
+        </tr>
+        <tr>
+            <td> &lt;applet&gt;</td>
+            <td>Визначае вбудований аплет</td>
+        </tr>
+        <tr>
+            <td> &lt;area&gt;</td>
+            <td>Тег, який визначає інтерактивну область в зображенні-карті (елемент <map>), тобто при кліці на певну
+                    область зображення відбуваються</td>
+        </tr>
+        <tr>
+            <td> &lt;article&gt;</td>
+            <td> Тег `&lt;article&gt;` визначає незалежний, самодостатній зміст від іншої частини сайту.</td>
+        </tr>
+        <tr>
+            <td> &lt;aside&gt;</td>
+            <td>Блок з додатковою інформацією</td>
+        </tr>
+        <tr>
+            <td> &lt;audio&gt;</td>
+            <td>Додає аудіозапис на веб-сторінку</td>
+        </tr>
+        <tr>
+            <td> &lt;b&gt;</td>
+            <td>Робить текст жирним</td>
+        </tr>
+        <tr>
+            <td> &lt;base&gt;</td>
+            <td>Змінює абсолютний шлях сторінки</td>
+        </tr>
+        <tr>
+            <td> &lt;basefont&gt;</td>
+            <td>Задає шрифт за замовчуванням</td>
+        </tr>
+        <tr>
+            <td> &lt;bdo&gt;</td>
+            <td>Змінює напрямок тексту</td>
+        </tr>
+        <tr>
+            <td> &lt;big&gt;</td>
+            <td>Робить текст більшим</td>
+        </tr>
+        <tr>
+            <td> &lt;blockquote&gt;</td>
+            <td>Довга цитата</td>
+        </tr>
+        <tr>
+            <td> &lt;body&gt;</td>
+            <td> Визначає кордоти тіла веб-сторінки</td>
+        </tr>
+        <tr>
+            <td> &lt;br&gt;</td>
+            <td> Створює перехід на новий рядок</td>
+        </tr>
+        <tr>
+            <td> &lt;button&gt;</td>
+            <td>Визначає кнопку</td>
+        </tr>
+        <tr>
+            <td> &lt;canvas&gt;</td>
+            <td>Використовується як контейнер для графіки</td>
+        </tr>
+        <tr>
+            <td> &lt;caption&gt;</td>
+            <td> Визначає назву таблиці</td>
+        </tr>
+        <tr>
+            <td> &lt;center&gt;</td>
+            <td>Вирівнює текст по центру</td>
+        </tr>
+        <tr>
+            <td> &lt;cite&gt;</td>
+            <td>Визначає назву твору</td>
+        </tr>
+        <tr>
+            <td> &lt;code&gt;</td>
+            <td>Вказує, що зміст теґа - програмний код</td>
+        </tr>
+        <tr>
+            <td> &lt;col&gt;</td>
+            <td>Задає загальні властивості для однієї чи декількох колонок</td>
+        </tr>
+        <tr>
+            <td> &lt;colgroup&gt;</td>
+            <td>Створює структурну групу, що об'єднує один або кілька стовпчиків</td>
+        </tr>
+        <tr>
+            <td> &lt;datalist&gt;</td>
+            <td>Створює список варіантів</td>
+        </tr>
+        <tr>
+            <td> &lt;dd&gt;</td>
+            <td>Визначення терміну</td>
+        </tr>
+        <tr>
+            <td> &lt;del&gt;</td>
+            <td> Визначає текст котрий був видалений в новій версії документа</td>
+        </tr>
+        <tr>
+            <td> &lt;details&gt;</td>
+            <td>Визначає контент котрий користувач може приховати чи відобразити</td>
+        </tr>
+        <tr>
+            <td> &lt;dfn&gt;</td>
+            <td>Позначає термін в тексті</td>
+        </tr>
+        <tr>
+            <td> &lt;dialog&gt;</td>
+            <td>Створює діалогове вікно</td>
+        </tr>
+        <tr>
+            <td> &lt;dir&gt;</td>
+            <td>Список з назв директорій</td>
+        </tr>
+        <tr>
+            <td> &lt;div&gt;</td>
+            <td>Блок</td>
+        </tr>
+        <tr>
+            <td> &lt;dl&gt;</td>
+            <td>Список термінів/визначень</td>
+        </tr>
+        <tr>
+            <td> &lt;!DOCTYPE&gt;</td>
+            <td>Задає версію HTML</td>
+        </tr>
+        <tr>
+            <td> &lt;dt&gt;</td>
+            <td> Задає назву терміна</td>
+        </tr>
+        <tr>
+            <td> &lt;em&gt;</td>
+            <td>Акцентує увагу на тексті</td>
+        </tr>
+        <tr>
+            <td> &lt;embed&gt;</td>
+            <td>Вставляє в html-документ зовнішній об'єкт</td>
+        </tr>
+        <tr>
+            <td> &lt;fieldset&gt;</td>
+            <td>Групує пов`язані поля форми</td>
+        </tr>
+        <tr>
+            <td> &lt;figcaption&gt;</td>
+            <td>Підпис до малюнка</td>
+        </tr>
+        <tr>
+            <td> &lt;figure&gt;</td>
+            <td>Групування елементів</td>
+        </tr>
+        <tr>
+            <td> &lt;font&gt;</td>
+            <td>Задає колір, розмір і тип шрифту</td>
+        </tr>
+        <tr>
+            <td> &lt;footer&gt;</td>
+            <td>Визначає футер (підвал) веб-сторінки</td>
+        </tr>
+        <tr>
+            <td> &lt;form&gt;</td>
+            <td>Визначає форму</td>
+        </tr>
+        <tr>
+            <td> &lt;frame&gt;</td>
+            <td>Визначає фрейм на веб-сторінці</td>
+        </tr>
+        <tr>
+            <td> &lt;frameset&gt;</td>
+            <td>Визначає структуру фреймів</td>
+        </tr>
+        <tr>
+            <td> &lt;h1&gt;</td>
+            <td> Заголовок першого рівня</td>
+        </tr>
+        <tr>
+            <td> &lt;h2&gt;</td>
+            <td>Заголовок другого рівня</td>
+        </tr>
+        <tr>
+            <td> &lt;h3&gt;</td>
+            <td> Заголовок третього рівня</td>
+        </tr>
+        <tr>
+            <td> &lt;h4&gt;</td>
+            <td>Заголовок четвертого рівня</td>
+        </tr>
+        <tr>
+            <td> &lt;h5&gt;</td>
+            <td> Заголовок п'ятого рівня</td>
+        </tr>
+        <tr>
+            <td> &lt;h6&gt;</td>
+            <td>Заголовок шостого рівня</td>
+        </tr>
+        <tr>
+            <td> &lt;head&gt;</td>
+            <td>Визначає інформацію про документ</td>
+        </tr>
+        <tr>
+            <td> &lt;header&gt;</td>
+            <td>Позначає розділ HTML-сторінки як заголовок</td>
+        </tr>
+        <tr>
+            <td> &lt;hgroup&gt;</td>
+            <td>Призначається для групування заголовків на веб-сторінці</td>
+        </tr>
+        <tr>
+            <td> &lt;hr&gt;</td>
+            <td>Горизонтальна лінія</td>
+        </tr>
+        <tr>
+            <td> &lt;html&gt;</td>
+            <td> Вказує, що почався HTML-документ</td>
+        </tr>
+        <tr>
+            <td> &lt;i&gt;</td>
+            <td>Виділяє текст курсивою</td>
+        </tr>
+        <tr>
+            <td> &lt;iframe&gt;</td>
+            <td>Вставляє на сторінку фрейм</td>
+        </tr>
+        <tr>
+            <td> &lt;img&gt;</td>
+            <td>Відображає графічне зображення на веб-сторінці</td>
+        </tr>
+        <tr>
+            <td> &lt;input&gt;</td>
+            <td>Поле вводу даних</td>
+        </tr>
+        <tr>
+            <td> &lt;ins&gt;</td>
+            <td>Визначає текст, котрий був доданий в новому документі</td>
+        </tr>
+        <tr>
+            <td> &lt;kbd&gt;</td>
+            <td>Позначає клавіші, що можуть бути натиснені</td>
+        </tr>
+        <tr>
+            <td> &lt;keygen&gt;</td>
+            <td>Поле для генерації пари ключів</td>
+        </tr>
+        <tr>
+            <td> &lt;label&gt;</td>
+            <td> Визначає мітку для елементу форми</td>
+        </tr>
+        <tr>
+            <td> &lt;legend&gt;</td>
+            <td>Заголовок до елементів, що згруповані за допомогою тега `fieldset`</td>
+        </tr>
+        <tr>
+            <td> &lt;li&gt;</td>
+            <td>Визначає елемент списку</td>
+        </tr>
+        <tr>
+            <td> &lt;link&gt;</td>
+            <td> Тег `link` служить для зв'язку html-документа із зовнішнім файлом</td>
+        </tr>
+        <tr>
+            <td> &lt;main&gt;</td>
+            <td>Визначає основний зміст документа</td>
+        </tr>
+        <tr>
+            <td> &lt;map&gt;</td>
+            <td>Визначає карту-зображення для картинки</td>
+        </tr>
+        <tr>
+            <td> &lt;mark&gt;</td>
+            <td>Виділяє текст жовтим</td>
+        </tr>
+        <tr>
+            <td> &lt;menu&gt;</td>
+            <td>Відображає список пунктів меню</td>
+        </tr>
+        <tr>
+            <td> &lt;menuitem&gt;</td>
+            <td>Додає нові пункти в контекстне меню</td>
+        </tr>
+        <tr>
+            <td> &lt;meta&gt;</td>
+            <td>Визначає метадані документа</td>
+        </tr>
+        <tr>
+            <td> &lt;meter&gt;</td>
+            <td>Створює візуальну шкалу</td>
+        </tr>
+        <tr>
+            <td> &lt;nav&gt;</td>
+            <td>Набір навігаційних посилань</td>
+        </tr>
+        <tr>
+            <td>&lt;noscript&gt;            </td>
+            <td> Визначає альтернативний контент для користувачів у котрих не працює JavaScript</td>
+        </tr>
+        <tr>
+            <td>&lt;object&gt;</td>
+            <td>Визначає вбудований об'єкт</td>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Визначає впорядкований список</td>
+        </tr>
+        <tr>
+            <td>&lt;optgroup&gt;</td>
+            <td>Групує список опцій.</td>
+        </tr>
+        <tr>
+            <td>&lt;option&gt;</td>
+            <td>Створює пункт списку</td>
+        </tr>
+        <tr>
+            <td>&lt;output&gt;</td>
+            <td>Визначає результат розрахунку</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Визначає текстовий абзац</td>
+        </tr>
+        <tr>
+            <td>&lt;param&gt;</td>
+            <td>Задає параметри для об'єктів</td>
+        </tr>
+        <tr>
+            <td>&lt;picture&gt;</td>
+            <td>Являє собою контейнер для зберігання кількох елементів &lt;source&gt; , які підтримують елемент &lt;img&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Виводить попередньо відформатований текст</td>
+        </tr>
+        <tr>
+            <td>&lt;progress&gt;</td>
+            <td>Відображає хід виконання завдання</td>
+        </tr>
+        <tr>
+            <td>&lt;q&gt;</td>
+            <td>Коротка цитата</td>
+        </tr>
+        <tr>
+            <td>&lt;rp&gt;</td>
+            <td>Що показати в браузеру, котрий не має підтримки рубінових анотацій.</td>
+        </tr>
+        <tr>
+            <td>&lt;rt&gt;</td>
+            <td>Додає анотацію зверху чи знизу від тексту</td>
+        </tr>
+        <tr>
+            <td>&lt;ruby&gt;</td>
+            <td>Додає пояснення до тексту</td>
+        </tr>
+        <tr>
+            <td>&lt;s&gt;</td>
+            <td>Визначає текст застарілим та закреслює його</td>
+        </tr>
+        <tr>
+            <td>&lt;samp&gt;</td>
+            <td>Визначає текст як вивід програми ябо скрипта</td>
+        </tr>
+        <tr>
+            <td>&lt;script&gt;</td>
+            <td>Додає на веб-сторінку JavaScript скрипт</td>
+        </tr>
+        <tr>
+            <td>&lt;section&gt;</td>
+            <td>Задає розділ документу</td>
+        </tr>
+        <tr>
+            <td>&lt;select&gt;</td>
+            <td>	Створює елемент введення у вигляді списку</td>
+        </tr>
+        <tr>
+            <td>&lt;small&gt;</td>
+            <td>Відображає текст зі зменшеним розміром шрифту</td>
+        </tr>
+        <tr>
+            <td>&lt;source&gt;</td>
+            <td>Визначає альтернативне джерело медіа-файлу для відтворення</td>
+        </tr>
+        <tr>
+            <td>&lt;span&gt;</td>
+            <td>Визначає унікальний ідентифікатор частини тексту</td>
+        </tr>
+        <tr>
+            <td>&lt;strike&gt;</td>
+            <td>Відображає текст закресленим</td>
+        </tr>
+        <tr>
+            <td>&lt;strong;&gt;</td>
+            <td>	Визначає важливий текст</td>
+        </tr>
+        <tr>
+            <td>&lt;style&gt;</td>
+            <td>Визначає стиль елементів веб-сторінки</td>
+        </tr>
+        <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Відображає текст у вигляді нижнього індексу</td>
+        </tr>
+        <tr>
+            <td>&lt;summary&gt;</td>
+            <td>Визначає заголовок для теґу `&lt;details&gt;`</td>
+        </tr>
+        <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Відображає шрифт у вигляді верхнього індексу</td>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Задає таблицю на HTML-сторінці</td>
+        </tr>
+        <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>	Визначає тіло таблиці</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt;</td>
+            <td>Визначає комірку таблиці</td>
+        </tr>
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td>Область введення багаторядкового тексту</td>
+        </tr>      
+        <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>	Задає нижній колонтитул таблиці</td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt;</td>
+            <td>	Визначає клітинку-заголовок таблиці</td>
+        </tr>
+        <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Визначає групу заголовків HTML-таблиці</td>
+        </tr>
+        <tr>
+            <td>&lt;time&gt;</td>
+            <td>Визначає час або дату</td>
+        </tr>        <tr>
+            <td>&lt;title&gt;</td>
+            <td>Визначає заголовок веб-сторінки</td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Визначає рядок в таблиці</td>
+        </tr>        <tr>
+            <td>&lt;track&gt;</td>
+            <td>Визначає текстову доріжку до медіа-елементів</td>
+        </tr>
+        <tr>
+            <td>&lt;tt&gt;</td>
+            <td>Відображає текст моношининним шрифтом</td>
+        </tr>        <tr>
+            <td>&lt;u&gt;</td>
+            <td>Визначає підкреслений текс</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Визначає позначений(ненумерований) список</td>
+        </tr>
+        <tr>
+            <td>&lt;var&gt;</td>
+            <td>Використовується для виділення змінних з комп'ютерних програм</td>
+        </tr> 
+        <tr>
+            <td>&lt;video&gt;</td>
+            <td>Відображає відео на сайті</td>
+        </tr>
+        <tr>
+            <td>&lt;wbr&gt;</td>
+            <td>Вказує браузеру місце, де допускається робити перенос рядка в тексті</td>
+        </tr>      
+    </table>
+    </div>
+
+    <button id="scroll-top" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 20px;">UP!</button>
+
+<script>
+  const scrollTopButton = document.getElementById('scroll-top');
+
+  window.onscroll = () => {
+    scrollTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+  };
+
+  scrollTopButton.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+    <div class="pagination">
+        <a href="Search.html" class="active">Довідник НТML</a>
+        <a href="Dovidnuk2.html">Довідник CSS</a>
+        <a href="Dovidnuk3.html">Довідник JS</a>
+    </div>
+</body>
+
+</html>
