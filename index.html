@@ -43,7 +43,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 30px; 
-    transform: translateX(-200px);        
+    transform: translateX(-200px);       
 }
 
 .navigation a {
@@ -56,7 +56,13 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.navigation a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
 .navigation img {
     width: 70px;
